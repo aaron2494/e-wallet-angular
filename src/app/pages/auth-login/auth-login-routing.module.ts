@@ -4,8 +4,7 @@ import { RegistroComponent } from '../auth-registro/registro/registro.component'
 import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
-  { path:'', component:LoginComponent },
-  {path:'registro',component:RegistroComponent}
+
 ];
 
 @NgModule({

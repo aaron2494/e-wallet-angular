@@ -8,9 +8,6 @@ import Swal from 'sweetalert2';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent  {
-  @Input() error!: string ;
-  @Output() submitEM = new EventEmitter();
-
   user = {
     email:'',
     password:''
@@ -25,7 +22,7 @@ export class LoginComponent  {
   logIn() {
     if (this.form.valid){
       this.user=this.form.value; 
-      Swal.fire({//Muestra una alerta de exito
+      Swal.fire({
         icon: 'success',
         title: 'Login success',
         showConfirmButton: false,
